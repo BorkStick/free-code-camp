@@ -13,25 +13,27 @@
 
     <nav id="navbar">
         <header>
-        <div><img src="" alt="docker docs"></div>
-        <div>
-            <ul>
-                <li><a href="#Orientation_and_setup" class="nav-link">Orientation and setup</a></li>
-                <li><a href="#Download_and_install_Docker" class="nav-link">Download and install Docker</a></li>
-                <li><a href="#Start_the_tutorial" class="nav-link">Start the tutorial</a></li>
-                <li><a href="#The_Docker_Dashboard" class="nav-link">The Docker Dashboard</a></li>
-                <li><a href="#JavaScript_&_Java" class="nav-link">JavaScript & Java</a></li>
-                <li><a href="#CLI_references" class="nav-link">CLI references</a></li>
-                
-            </ul>
-        </div>
-    </header>
+            <div><a href="index.html">docker docs</a></div>
+            <div>
+                <ul>
+                    <li><a href="#Orientation_and_setup" class="nav-link">Orientation and setup</a></li>
+                    <li><a href="#Download_and_install_Docker" class="nav-link">Download and install Docker</a></li>
+                    <li><a href="#Start_the_tutorial" class="nav-link">Start the tutorial</a></li>
+                    <li><a href="#The_Docker_Dashboard" class="nav-link">The Docker Dashboard</a></li>
+                    <li><a href="#What_is_a_container" class="nav-link">What is a container?</a></li>
+                    <li><a href="#What_is_a_container_image" class="nav-link">What is a container image?</a></li>
+                    <li><a href="#JavaScript_&_Java" class="nav-link">JavaScript & Java</a></li>
+                    <li><a href="#CLI_references" class="nav-link">CLI references</a></li>
+
+                </ul>
+            </div>
+        </header>
     </nav>
 
     <main id="main-doc">
         <h1 id="title">technical-documentation</h1>
         <section class="main-section" id="Orientation_and_setup">
-            <header >
+            <header>
                 <h2>
                     Orientation and setup
                 </h2>
@@ -45,37 +47,47 @@
                 <li>Deploy Docker applications using multiple containers with a database</li>
                 <li>Running applications using Docker Compose</li>
             </ul>
-            <p>In addition, you’ll also learn about the best practices for building images, including instructions on how to scan your images for security vulnerabilities.</p>
+            <p>In addition, you’ll also learn about the best practices for building images, including instructions on
+                how to scan your images for security vulnerabilities.</p>
 
-            <p>If you are looking for information on how to containerize an application using your favorite language, see Language-specific getting started guides.</p>
+            <p>If you are looking for information on how to containerize an application using your favorite language,
+                see Language-specific getting started guides.</p>
             <p>We also recommend the video walkthrough from DockerCon 2020.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iqqDU2crIEQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </section>
 
         <section class="main-section" id="Download_and_install_Docker">
             <header>
                 <h2>
                     Download and install Docker
-
                 </h2>
             </header>
-            <p>This tutorial assumes you have a current version of Docker installed on your machine. If you do not have Docker installed, choose your preferred operating system below to download Docker:</p>
+            <p>This tutorial assumes you have a current version of Docker installed on your machine. If you do not have
+                Docker installed, choose your preferred operating system below to download Docker:</p>
 
-            <p>For Docker Desktop installation instructions, see Install Docker Desktop on Mac and Install Docker Desktop on Windows.</p>
-            <p>By downloading Docker Desktop, you agree to the terms of the Docker Software End User License Agreement and the Docker Data Processing Agreement.</p>
+            <p>For Docker Desktop installation instructions, see Install Docker Desktop on Mac and Install Docker
+                Desktop on Windows.</p>
+            <p>By downloading Docker Desktop, you agree to the terms of the Docker Software End User License Agreement
+                and the Docker Data Processing Agreement.</p>
 
         </section>
 
         <section class="main-section" id="Start_the_tutorial">
-            <header >
+            <header>
                 <h2>
                     Start the tutorial
                 </h2>
             </header>
             <p>f you’ve already run the command to get started with the tutorial, congratulations! If not, open a
                 command prompt or bash window, and run the command:</p>
-            <code>
-                docker run -d -p 80:80 docker/getting-started
-            </code>
+            <div>
+                <code>
+                    docker run -d -p 80:80 docker/getting-started
+                </code>
+            </div>
             <p>You’ll notice a few flags being used. Here’s some more info on them:</p>
             <ul>
                 <li><code>-d</code> - run the container in detached mode (in the background)</li>
@@ -83,32 +95,84 @@
                 <li><code>docker/getting-started</code> - the image to use</li>
 
             </ul>
+            <div class="tip-area">
+                <h4>Tip</h4>
+                <p>You can combine single character flags to shorten the full command. As an example, the command above
+                    could be written as:</p>
 
-            <h4>Tip</h4>
-            <p>You can combine single character flags to shorten the full command. As an example, the command above could be written as:</p>
+                <code>docker run -dp 80:80 docker/getting-started</code>
 
-            <code>docker run -dp 80:80 docker/getting-started</code>
+            </div>
 
         </section>
 
         <section class="main-section" id="The_Docker_Dashboard">
-            <header >
+            <header>
                 <h2>
                     The Docker Dashboard
 
                 </h2>
             </header>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ex recusandae laboriosam itaque id quia
-                suscipit numquam tempora pariatur accusantium odit fuga earum a dignissimos provident asperiores,
-                distinctio qui accusamus.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ex recusandae laboriosam itaque id quia
-                suscipit numquam tempora pariatur accusantium odit fuga earum a dignissimos provident asperiores,
-                distinctio qui accusamus.</p>
+            <p>Before going too far, we want to highlight the Docker Dashboard, which gives you a quick view of the
+                containers running on your machine. The Docker Dashboard is available for Mac and Windows. It gives you
+                quick access to container logs, lets you get a shell inside the container, and lets you easily manage
+                container lifecycle (stop, remove, etc.).</p>
+            <p>To access the dashboard, follow the instructions for either Mac or Windows. If you open the dashboard
+                now, you will see this tutorial running! The container name (jolly_bouman below) is a randomly created
+                name. So, you’ll most likely have a different name.</p>
+            <img src="https://docs.docker.com/get-started/images/tutorial-in-dashboard.png" alt="" width="100%">
+
+        </section>
+
+        <section class="main-section" id="What_is_a_container">
+            <header>
+                <h2>
+                    What is a container?
+                </h2>
+            </header>
+            <p>Now that you’ve run a container, what is a container? Simply put, a container is simply another process
+                on your machine that has been isolated from all other processes on the host machine. That isolation
+                leverages kernel namespaces and cgroups, features that have been in Linux for a long time. Docker has
+                worked to make these capabilities approachable and easy to use.</p>
+            <div class="tip-area">
+                <h4>Creating containers from scratch</h4>
+                <p>If you’d like to see how containers are built from scratch, Liz Rice from Aqua Security has a
+                    fantastic talk in which she creates a container from scratch in Go. While she makes a simple
+                    container, this talk doesn’t go into networking, using images for the filesystem, and more. But, it
+                    gives a fantastic deep dive into how things are working.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8fi7uSYlOdc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <section class="main-section" id="What_is_a_container_image">
+            <header>
+                <h2>
+                    What is a container image?
+                </h2>
+            </header>
+            <p>When running a container, it uses an isolated filesystem. This custom filesystem is provided by a
+                container image. Since the image contains the container’s filesystem, it must contain everything needed
+                to run an application - all dependencies, configuration, scripts, binaries, etc. The image also contains
+                other configuration for the container, such as environment variables, a default command to run, and
+                other metadata.</p>
+
+            <p>We’ll dive deeper into images later on, covering topics such as layering, best practices, and more.</p>
+
+            <div class="tip-area">
+                <h4>Info</h4>
+                <p>If you’re familiar with <code>chroot</code>, think of a container as an extended version of <code>chroot</code>. The filesystem is simply coming from the image. But, a container adds additional isolation not available when simply using chroot.</p>
+
+            </div>
 
         </section>
 
         <section class="main-section" id="JavaScript_&_Java">
-            <header >
+            <header>
                 <h2>
                     JavaScript & Java
                 </h2>
@@ -122,7 +186,7 @@
 
         </section>
         <section class="main-section" id="CLI_references">
-            <header >
+            <header>
                 <h2>
                     CLI references
                 </h2>

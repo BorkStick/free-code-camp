@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+
 @media screen and (min-width: 480px) {
     body {
         background-color: lightgreen;
     }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 16px;
+}
+p {
+    padding: 6px 0px;
+}
+h1 {
+    font-size: 24px;
+    color: #000;
+}
+h2 {
+    font-size: 20px;
+    color: #000;
 }
 
 /* The side navigation menu */
@@ -35,6 +57,12 @@
     color: white;
 }
 
+#navbar ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+}
+
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 #main-doc {
     margin-left: 200px;
@@ -42,6 +70,24 @@
     height: 1000px;
 }
 
+section {
+    padding: 10px 300px 10px 0px;
+    
+}
+
+section ul {
+    padding: 0px 0px 0px 40px;
+}
+section li {
+    padding: 5px 0px 5px 0px;
+}
+
+code {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #fff;
+    padding: 5px 5px;
+    margin: 5px 0px;
+}
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
     .navbar {
@@ -57,6 +103,10 @@
     #main-doc {
         margin-left: 0;
     }
+}
+
+.tip-area {
+    background-color: rgb(156, 109, 202);
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
