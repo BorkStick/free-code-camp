@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,142 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>technical-documentation</title>
 </head>
+
 <body>
-    <h1 id="title">technical-documentation</h1>
+
+    <nav id="navbar">
+        <header>
+        <div><img src="" alt="docker docs"></div>
+        <div>
+            <ul>
+                <li><a href="#Orientation_and_setup" class="nav-link">Orientation and setup</a></li>
+                <li><a href="#Download_and_install_Docker" class="nav-link">Download and install Docker</a></li>
+                <li><a href="#Start_the_tutorial" class="nav-link">Start the tutorial</a></li>
+                <li><a href="#The_Docker_Dashboard" class="nav-link">The Docker Dashboard</a></li>
+                <li><a href="#JavaScript_&_Java" class="nav-link">JavaScript & Java</a></li>
+                <li><a href="#CLI_references" class="nav-link">CLI references</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    </nav>
+
+    <main id="main-doc">
+        <h1 id="title">technical-documentation</h1>
+        <section class="main-section" id="Orientation_and_setup">
+            <header >
+                <h2>
+                    Orientation and setup
+                </h2>
+            </header>
+            <p>Welcome! We are excited that you want to learn Docker.</p>
+            <p>This page contains step-by-step instructions on how to get started with Docker. In this tutorial, you’ll
+                learn how to:</p>
+            <ul>
+                <li>Build and run an image as a container</li>
+                <li>Share images using Docker Hub</li>
+                <li>Deploy Docker applications using multiple containers with a database</li>
+                <li>Running applications using Docker Compose</li>
+            </ul>
+            <p>In addition, you’ll also learn about the best practices for building images, including instructions on how to scan your images for security vulnerabilities.</p>
+
+            <p>If you are looking for information on how to containerize an application using your favorite language, see Language-specific getting started guides.</p>
+            <p>We also recommend the video walkthrough from DockerCon 2020.</p>
+        </section>
+
+        <section class="main-section" id="Download_and_install_Docker">
+            <header>
+                <h2>
+                    Download and install Docker
+
+                </h2>
+            </header>
+            <p>This tutorial assumes you have a current version of Docker installed on your machine. If you do not have Docker installed, choose your preferred operating system below to download Docker:</p>
+
+            <p>For Docker Desktop installation instructions, see Install Docker Desktop on Mac and Install Docker Desktop on Windows.</p>
+            <p>By downloading Docker Desktop, you agree to the terms of the Docker Software End User License Agreement and the Docker Data Processing Agreement.</p>
+
+        </section>
+
+        <section class="main-section" id="Start_the_tutorial">
+            <header >
+                <h2>
+                    Start the tutorial
+                </h2>
+            </header>
+            <p>f you’ve already run the command to get started with the tutorial, congratulations! If not, open a
+                command prompt or bash window, and run the command:</p>
+            <code>
+                docker run -d -p 80:80 docker/getting-started
+            </code>
+            <p>You’ll notice a few flags being used. Here’s some more info on them:</p>
+            <ul>
+                <li><code>-d</code> - run the container in detached mode (in the background)</li>
+                <li><code>-p 80:80</code> - map port 80 of the host to port 80 in the container</li>
+                <li><code>docker/getting-started</code> - the image to use</li>
+
+            </ul>
+
+            <h4>Tip</h4>
+            <p>You can combine single character flags to shorten the full command. As an example, the command above could be written as:</p>
+
+            <code>docker run -dp 80:80 docker/getting-started</code>
+
+        </section>
+
+        <section class="main-section" id="The_Docker_Dashboard">
+            <header >
+                <h2>
+                    The Docker Dashboard
+
+                </h2>
+            </header>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ex recusandae laboriosam itaque id quia
+                suscipit numquam tempora pariatur accusantium odit fuga earum a dignissimos provident asperiores,
+                distinctio qui accusamus.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ex recusandae laboriosam itaque id quia
+                suscipit numquam tempora pariatur accusantium odit fuga earum a dignissimos provident asperiores,
+                distinctio qui accusamus.</p>
+
+        </section>
+
+        <section class="main-section" id="JavaScript_&_Java">
+            <header >
+                <h2>
+                    JavaScript & Java
+                </h2>
+            </header>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ex recusandae laboriosam itaque id quia
+                suscipit numquam tempora pariatur accusantium odit fuga earum a dignissimos provident asperiores,
+                distinctio qui accusamus.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ex recusandae laboriosam itaque id quia
+                suscipit numquam tempora pariatur accusantium odit fuga earum a dignissimos provident asperiores,
+                distinctio qui accusamus.</p>
+
+        </section>
+        <section class="main-section" id="CLI_references">
+            <header >
+                <h2>
+                    CLI references
+                </h2>
+            </header>
+            <p>Refer to the following topics for further documentation on all CLI commands used in this article:</p>
+            <ul>
+                <li><a href="">docker version</a></li>
+                <li><a href="">docker run</a></li>
+                <li><a href="">docker image</a></li>
+                <li><a href="">docker container</a></li>
+            </ul>
+
+        </section>
+
+    </main>
 
 
 
-    
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
