@@ -32,3 +32,13 @@ You can build your project by using this CodePen template and clicking Save to c
 
 Once you're done, submit the URL to your working project with all its tests passing.
 
+
+
+
+# Portfolio
+![GitHub Logo](/assets/img/portfolio.png)
+## Info
+Full-Stack Web Developer Portfolio made with HTML CSS JS Bootstrap 
+
+## Demo
+https://borkstick.github.io/Portfolio/
