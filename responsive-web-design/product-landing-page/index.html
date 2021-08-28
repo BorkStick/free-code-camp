@@ -5,53 +5,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>product-landing-page</title>
+    <title>The Chillest Chill</title>
 </head>
 
 <body>
     <header id="header">
-        <img src="" alt="LOGO" id="header-img">
-        <nav id="nav-bar">
-            <ul>
-                <li ><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-top justify-content-between" id="nav-bar">
+            <img src="" alt="The Chillest Chill" class="navbar-brand" id="header-img">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shop">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sign-up">About</a>
+                    </li>
+
+                </ul>
+
+                
+            </div>
+            <form class="form-inline px-5" >
+                <a href="" class="btn btn-outline-light btn-lg">Shop Now</a>
+
+            </form>
         </nav>
     </header>
-    <h1 id="title">product-landing-page</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate error, saepe quis alias illo quam nihil perferendis voluptas maxime ipsum mollitia in aperiam beatae dicta perspiciatis iure cum recusandae id.
 
-    </p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quae illum exercitationem. Error provident pariatur eveniet iste ab magnam magni amet distinctio, itaque illum nisi, est eos optio sequi! Necessitatibus!</p>
+    <main>
+        <section class="text-white" id="hero">
+            <div class="row hero-text">
+                <div class="col text-center">
+                    <h1 id="title">Get The Chillest T-Shirt's On The Interwebs</h1>
+                    <p>Experience The Chillest Chill</p>
+                    <a href="http://thechillestchill.com" type="button" class="btn btn-light btn-lg">Shop Now</a>
 
-    <h1 id="home">home</h1>
-    <h1 id="about">about</h1>
-    <video src="" id="video">
+                </div>
+                <div class="col">
+                    <img class="img-fluid"
+                        src="http://thechillestchill.com/wp-content/uploads/2021/05/unisex-premium-t-shirt-white-front-609dd83e65813.png"
+                        alt="">
 
-    </video>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate error, saepe quis alias illo quam nihil perferendis voluptas maxime ipsum mollitia in aperiam beatae dicta perspiciatis iure cum recusandae id.
+                </div>
 
-    </p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quae illum exercitationem. Error provident pariatur eveniet iste ab magnam magni amet distinctio, itaque illum nisi, est eos optio sequi! Necessitatibus!</p>
-    
+            </div>
+        </section>
 
-    <h1 id="contact">contact</h1>
+        <section class=" " id="shop">
+            
+            <div class="row text-center">
+                <div class="col">
+                    <a  href="http://thechillestchill.com/product-category/t-shirts/" class="card " >
+                        <img src="http://thechillestchill.com/wp-content/uploads/2021/04/unisex-premium-t-shirt-black-heather-front-60721500efaec.png" alt=""class="mx-auto" id="shirt-img" class=" ">
+                        <h1 id="t-shirt" class="text-white center-text">T-Shirts</h1>
+                    
+                    </a>
+                    
+                </div>               
+                <div class="col ">
+                    <a href="http://thechillestchill.com/product-category/stickers/" class="card">
+                        <img src="http://thechillestchill.com/wp-content/uploads/2021/01/kiss-cut-stickers-5.5x5.5-default-6014608c30d71.png" alt="" id="sticker-img" class="mx-auto">
+                        <h1 id="stickers" class="text-white">Stickers</h1>
+                    
+                    </a>
+                </div>
 
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <input type="email" name="email" id="email" placeholder="terry@bork.tech">
-        <input type="submit" value="Submit" id="submit">
-    </form>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate error, saepe quis alias illo quam nihil perferendis voluptas maxime ipsum mollitia in aperiam beatae dicta perspiciatis iure cum recusandae id.
+            </div>
 
-    </p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quae illum exercitationem. Error provident pariatur eveniet iste ab magnam magni amet distinctio, itaque illum nisi, est eos optio sequi! Necessitatibus!</p>
-    
+        </section>
+
+        <section class="container py-5">
+            
+            <div class="chill-video">
+                <h2 class="text-center">Check out the chill video of the month</h2>
+
+            </div>
+            <div class="embed-responsive embed-responsive-16by9 d-flex justify-content-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/O8qilxaBR20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+
+            </div>
+        </section>
+
+        <section class="container bg-dark text-white">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="d-none d-md-block">
+                            <figure class="text-end">
+                                <blockquote class="blockquote">
+                                    <p>These t-shirts are really chill</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Terry
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class=" d-none d-md-block">
+                            <figure class="text-end">
+                                <blockquote class="blockquote">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, blanditiis!</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Ipsum 
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class=" d-none d-md-block">
+                            <figure class="text-end">
+                                <blockquote class="blockquote">
+                                    <p>I bought a shirt with a bunch of copys of my face. When I look in the mirror when
+                                        I am wearing it's hard to tell which one is my real face</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Tylor Wurz
+                                </figcaption>
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="bg-light" id="sign-up">
+            <div class="row">
+                <div class="col p-5">
+                    
+                    <p>Join the chillest chill gang and learn about our latest merch!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, blanditiis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, blanditiis!</p>
+                </div>
+                <div class="col p-5">
+                <h1 id="contact" class="text-center">Sign Up</h1>
+                <form action="https://www.freecodecamp.com/email-submit" id="form" class="">
+                    <div class="row">
+                        <input type="text" name="firstlast" id="firstlast" placeholder="Your first & last name..." class="form-control form-control-lg">
+
+                    </div>
+                    
+                    <div class="row">
+                        <input type="email" name="email" id="email" placeholder="Your email..." class="form-control form-control-lg">
+                        <input type="submit" value="Submit" id="submit" class="btn btn-dark btn-lg">
+
+                    </div>
+                </form>
+            </div>
+            </div>
+            
+            
+           
+
+        </section>
+    </main>
 
 
 
 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="./assets/js/main.js"></script>

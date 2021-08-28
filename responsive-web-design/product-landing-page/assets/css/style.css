@@ -1,8 +1,60 @@
 @media screen and (min-width: 480px) {
-    body {
-      background-color: lightgreen;
-    }
+  body {
+    background-color: #90EE90;
   }
-  video {
-      display: flex;
-  }
+}
+
+video {
+  display: flex;
+}
+
+#hero {
+  height: 100%;
+  background-color: #202A25;
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 2.0rem;
+  font-weight: 200;
+}
+
+.hero img {
+  height: 100%;
+}
+
+#carouselExampleCaptions {
+  height: 200px;
+}
+
+#sticker-img {
+  width: 50%;
+}
+
+#shirt-img {
+  justify-content: center;
+  width: 50%;
+}
+
+.card {
+  background-color: #A6808C;
+  margin: 40px;
+}
+
+.chill-video {
+  background-color: #5F4BB6;
+  color: white;
+  font-size: 80px;
+  height: 100px;
+  margin: 0px 350px;
+}
